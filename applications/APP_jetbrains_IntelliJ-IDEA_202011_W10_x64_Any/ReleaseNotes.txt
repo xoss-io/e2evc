@@ -1,0 +1,12 @@
+
+
+#----------------------------Automatic generated-----------------------------#
+Package files:
+
+\ideaIU-2020.1.1.exe
+---> File time: 14/05/2020 08:29:09
+
+\silent.config
+---> File time: 14/05/2020 08:40:13
+
+

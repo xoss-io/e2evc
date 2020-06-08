@@ -43,7 +43,7 @@ CTO and Product Owner at XOSS.io
 
 Everyone should enjoy the easy devops life, not the complicated one.
 
-We are working on a products that simply file the Infrastructure as Code implementation for our customers by providing solutions for:
+We are working on a products that simplify the Infrastructure as Code implementation for our customers by providing solutions for:
 
 ## Image Management
 
@@ -76,20 +76,4 @@ We are working on a products that simply file the Infrastructure as Code impleme
 
 # Product Launch
 
-On July 1st, 2020
-
-> Check [xoss.io](https://xoss.io) for more information.
-
-# Agenda
-
-## Image Management
-
-Create base images with Packer and Azure DevOps Pipelines on AWS
-
-## Platform Management
-
-Define the infrastructure with Terraform on AWS
-
-## Configuration Management
-
-Configure the created isntances with PowerShell DSC. Create a Citrix Virtaul Apps and Desktops 1912 LTSR site completely automated.
+> Check [xoss.io](https://xoss.io) for more information after July 1st, 2020.
