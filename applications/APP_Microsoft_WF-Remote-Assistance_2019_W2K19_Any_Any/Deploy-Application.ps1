@@ -72,7 +72,7 @@ Try {
 	[string]$appRevision = "10"
 	[string]$appScriptVersion = "1.0.0"
 	[string]$appScriptDate = "05/05/2020"
-	[string]$appScriptAuthor = "Christoph Albrecht"
+	[string]$appScriptAuthor = "xoss.io"
 [string]$appTargetOS = "Windows Server 2019"
 	[string]$appTags = ''
 	##*===============================================

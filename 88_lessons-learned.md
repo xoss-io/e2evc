@@ -2,11 +2,13 @@
 
 > DO NOT USE VISUAL STUDIO CODE
 
-The available extensions are not fully v0.12 functional and lack dependency support between modules
+The available extensions are not fully v0.12 functional and lack dependency support between modules.
 
 > Use IntelliJ IDEA or PyCharm
 
 Using these will push you to the next level and keep your heart rate from getting into the red (really bad) critical level
+
+[IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
 # Coding Platform
 
@@ -28,11 +30,11 @@ module "logging" {
 
 ##  Use one Repo per module
 
-Separate Terraform modules and infrastructure Modules through seperate repos.
+Separate Terraform modules and infrastructure Modules through seperated repositories.
 
-## Work never in a team without Terraform Backends
+## Never work in a team without Terraform backend configuration
 
-Typically your Terraform state file resides locally in your Terraform working directory. If you are working on infrastruture implementations in a team you should implement a backend with state locking to prevent accidential parallel changes.
+Typically your Terraform state file reside locally in your Terraform working directory. If you are working on infrastruture implementations in a team you should implement a backend with state locking to prevent accidential parallel changes.
 
 Create the backend with some easy steps:
 
@@ -53,6 +55,8 @@ aws dynamodb create-table --table-name e2evc-terraform-state-lock --attribute-de
 ```
 
 ### Don´t forget to import these manually created resources afterwards in Terraform
+
+This will enable you to configure these resources with Terraform.
 
 ```
 terraform import aws_s3_bucket.xoss_root_terraform_state id=e2evc-terraform-backend-bucket

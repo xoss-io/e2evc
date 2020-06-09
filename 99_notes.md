@@ -10,7 +10,7 @@ Deprecation of public cloud support from on-premises Current Releases
 
 ## PSADT
 
-All packages in this demo where istalled with PSADT packages.
+All packages in this demo where installed with PowerShell DSC and PSADT packages.
 
 More info [PowerShell AppDeploymentToolkit](https://psappdeploytoolkit.com/)
 
@@ -20,4 +20,4 @@ We attached some examples in the applications directory.
 
 ## You want to have access to our frontend?
 
-E2EVC attendees, CTPs,CTAs, MVPs and all other "s" get accees to an account if you want to.
+E2EVC attendees, CTPs,CTAs, MVPs and all other "s" get accees to an account if you want to. Send an email to e2evc@xoss.io.

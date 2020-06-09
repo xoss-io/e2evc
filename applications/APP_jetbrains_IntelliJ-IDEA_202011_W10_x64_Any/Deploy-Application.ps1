@@ -74,7 +74,7 @@ Try {
 	[string]$appRevision = "03"
 	[string]$appScriptVersion = "1.0.0"
 	[string]$appScriptDate = "06/02/2020"
-	[string]$appScriptAuthor = "Christoph Albrecht"
+	[string]$appScriptAuthor = "xoss.io"
 	[string]$appTargetOS = "Windows 10"
 	[string]$appTags = ''
 	##*===============================================

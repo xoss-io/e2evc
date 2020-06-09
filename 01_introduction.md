@@ -72,7 +72,6 @@ We are working on a products that simplify the Infrastructure as Code implementa
 ## Insights
 
 - Hosted ELK Stack with custom Dashboards for the above mentioned modules
-# What to expect today?
 
 # Product Launch
 
