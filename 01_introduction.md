@@ -7,7 +7,7 @@ ___________________  _______________   _____________       .___.__       .__  __
         \/         \/        \/                    \/       \/   /_____/               \/      
 ```
 
-Welcome to the E2EVC digital edition Automation Masterclass
+Welcome to the E2EVC DIGITAL | THE WORLD Automation Masterclass
 
 # Who we are
 

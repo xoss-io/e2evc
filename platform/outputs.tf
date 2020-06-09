@@ -1,34 +1,18 @@
-output "vpc_id" {
-  description = "The id of the created vpc."
-  value       = "${module.vpc.vpc_id}"
+
+output "ec2_instances" {
+  value = aws_instance.ec2[*]
 }
 
-output "vpc_public_subnet_ids" {
-  description = "The public subnet ids of the created vpc."
-  value       = "${module.vpc.public_subnets}"
+output "dns" {
+  value = {
+    lb_ddc = aws_route53_record.lb_record_ddc.fqdn
+    lb_stf = aws_route53_record.lb_record_stf.fqdn
+  }
 }
 
-output "vpc_private_subnet_ids" {
-  description = "The private subnet ids of the created vpc."
-  value       = "${module.vpc.private_subnets}"
-}
-
-output "citrix_storefront_loadbalancer_dns_name" {
-  description = "The public accessable dns name of the loadbalancer."
-  value       = "http://${module.citrix_storefront_cluster.loadbalancer_dns_name}"
-}
-
-output "citrix_storefront_loadbalancer_arn" {
-  description = "The id/arn of the loadbalancer."
-  value       = "${module.citrix_storefront_cluster.loadbalancer_arn}"
-}
-
-output "citrix_ddc_loadbalancer_dns_name" {
-  description = "The public accessable dns name of the loadbalancer."
-  value       = "http://${module.citrix_delivery_controller_cluster.loadbalancer_dns_name}"
-}
-
-output "citrix_ddc_loadbalancer_arn" {
-  description = "The id/arn of the loadbalancer."
-  value       = "${module.citrix_delivery_controller_cluster.loadbalancer_arn}"
+output  "admin_user"{
+  value = {
+    username = local.administrative_user_to_create
+    password = random_password.ec2_installer.result
+  }
 }
