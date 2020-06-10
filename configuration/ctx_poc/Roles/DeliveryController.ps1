@@ -94,7 +94,7 @@ if($Node.IsPrimary -eq $True){
             DesktopType = $group.DesktopType
             IsMultiSession = $ConfigurationData.Citrix.DeliveryController["$($group.MachineCatalog)"].IsMultiSession
             PsDscRunAsCredential = $Credential 
-            DependsOn = "Catalog_$($group.MachineCatalog)"
+            DependsOn = "[XD7Catalog]Catalog_$($group.MachineCatalog)"
         }
 
         XD7DesktopGroupMember "DesktopGroup_$group_Machines" {
@@ -130,11 +130,11 @@ if($Node.IsPrimary -eq $True){
             AccessType = 'Direct';
             IncludeUsers = $Users;
             PsDscRunAsCredential = $Credential 
-            DependsOn = "[XD7DesktopGroup]DesktopGroup_($group.Name)";
+            DependsOn = "[XD7DesktopGroup]DesktopGroup_$($group.Name)";
 
         }
 
-        XD7AccessPolicy "DesktopGroup_$(group.Name)_AG" {
+        XD7AccessPolicy "DesktopGroup_$($group.Name)_AG" {
             DeliveryGroup = $group.Name
             AccessType = 'AccessGateway';
             IncludeUsers = $Users;

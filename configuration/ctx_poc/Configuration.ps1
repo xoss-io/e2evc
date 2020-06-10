@@ -7,9 +7,8 @@ Configuration "CTX_POC"{
     Import-Dscresource -ModuleName XOSSCtxOptimizationW2k19Any1809DSC
     Import-DscResource -ModuleName xDSCDomainjoin
 
-    $Password = $ConfigurationData.Domain.Password | ConvertTo-SecureString -AsPlainText -Force
     $Administrator = $ConfigurationData.Domain.Administrator
-    $Credential =  New-Object System.Management.Automation.PSCredential ($Administrator, $Password)
+    $Credential =  Get-Credential -Username $Administrator
 
 
     Node $AllNodes.NodeName {

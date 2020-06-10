@@ -34,7 +34,6 @@
         Name = "demo.infraxo-dev.com"
         Server = "172.31.5.28"
         Administrator = "DEMO\demo.admin"
-        Password = 'n0R1$C,n0Fun'
     }
 
     Citrix = @{
