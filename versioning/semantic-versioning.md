@@ -1,10 +1,10 @@
 # Semantic Versioning
 
-Software versioning is the most widely adopted scheme for assigning unique version version numbers to software releases.
+Software versioning is the most widely adopted scheme for assigning unique version numbers to software releases.
 
 # semver
 
-We practice Semantic Versioning for all projects. Using this versioning standard helps to reduce the entropy related to Dependency Hell.
+We practice Semantic Versioning for all projects. Using this versioning standard helps to reduce the entropy related to dependency hell.
 
 [Gopher Academy](https://blog.gopheracademy.com/advent-2015/semver/)
 
@@ -33,8 +33,12 @@ Managing semantic versions should be automated just like everything else in your
 
 Reference different module changes with semantic versioning to and reference them in your development stages:
 
+```
 git::ssh://git@ssh.dev.azure.com/v3/XOSS/infrastructure/xoss-terraform-labels.git?ref=v0.1.0"
+```
 
 After succesfull test create a pull request and merge the changes into your master branch. From there on use "master" as reference:
 
+```
 git::ssh://git@ssh.dev.azure.com/v3/XOSS/infrastructure/xoss-terraform-labels.git?ref=master"
+```
