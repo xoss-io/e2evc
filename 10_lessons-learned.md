@@ -62,3 +62,7 @@ This will enable you to configure these resources with Terraform.
 terraform import aws_s3_bucket.xoss_root_terraform_state id=e2evc-terraform-backend-bucket
 terraform import aws_dynamodb_table.xoss_root_terraform_lock id=e2evc-terraform-state-lock
 ```
+
+### Scrum is not for everybody
+
+Young people and developers seem to be most enthusiastic about working in a Scrum team. For traditional operations this is a huge step into another world.
