@@ -1,5 +1,7 @@
 # Principles
 
+We believe that one day IT infrastructure will become commodity. To achieve this we follow these principles:
+
 ## Everything that can be standardized will be standardized
 
 We belive that the only action to make infrastructure deployments and infrastructure services a commodity is to standardize as much as possible.

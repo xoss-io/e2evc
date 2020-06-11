@@ -1,4 +1,4 @@
-t XOSS we use elements of SCRUM for all of our software development projects.
+At XOSS we use elements of SCRUM for all of our software development projects.
 
 The official SCRUM guide can be found [here](https://www.scrumguides.org/):
 
