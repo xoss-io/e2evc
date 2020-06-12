@@ -5,12 +5,10 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "ctx-poc-terraform"
-    key = "ctx_poc.tf"
+    key = "ctx_poc.tfstate"
   }
 }
 provider "aws" {
-  access_key = "AKIAYM2REJZHQPGUXGPT"
-  secret_key = "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"
   alias   = "dev_account"
   region  = "eu-central-1"
 }
