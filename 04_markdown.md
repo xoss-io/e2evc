@@ -89,19 +89,18 @@ $i++;
 ### Tables
 
 ```
-| Animals | Fruits | Coins |
+| Cities | Musicians | Dinosaurs |
 |--------|-------|--------|
-| Cats | Apples | Nickle |
-| Dogs | Oranges | Quarter |
-| Zebras | Oranges | Dime |
+| New York | Queen | Sauropodomorpha |
+| Rio | Armin van Buuren | Titanosauria  |
+| Tokyo | Guns n´ Roses | Pachycephalosauria |
 ```
 
-| Animals | Fruits | Coins |
+| Cities | Musicians | Dinosaurs |
 |--------|-------|--------|
-| Cats | Apples | Nickle |
-| Dogs | Oranges | Quarter |
-| Zebras | Oranges | Dime |
-
+| New York | Queen | Sauropodomorpha |
+| Rio | Armin van Buuren | Titanosauria  |
+| Tokyo | Guns n´ Roses | Pachycephalosauria |
 ### References
 
 [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
