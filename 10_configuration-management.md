@@ -28,42 +28,42 @@
 - DSC v1
 
 ### PowerShell v5
- - DSC v2
- - partial configurations
- - encryption
- - PowerShell classes
- - deep integration with .NET framework
- 
- ## Why should you use it?
- 
- - classic domain environments are loosing importance
- - rise of cloud native environments
- - requirement of quick deployments
- - detect configuration drifts
- - push / pull configurations
- 
- ## Alternatives
- 
- - Puppet
- - Salt
- 
- ## Why you really should use it?
- 
- - configurationmanagement at scale
- - simple proxy implementation (web proxy with https)
- - environment specific configuration
- - domain independent configuration
- - runs in kernel mode
- - use it natively on every Windows system with WMF 5.1
- - dependency awareness between nodes and conditions
- - extensibility because it is based on PowerShell
- 
- - Get rid of GPOs
- - configuration sets
- - no hierarchy or inheritance
- - state is defined
- 
- > GPOs are so 90ies
+
+- DSC v2
+- partial configurations
+- encryption
+- PowerShell classes
+- deep integration with .NET framework
+
+## Why should you use it
+
+- classic domain environments are loosing importance
+- rise of cloud native environments
+- requirement of quick deployments
+- detect configuration drifts
+- push / pull configurations
+
+## Alternatives
+
+- Puppet
+- Salt
+
+## Why you really should use it
+
+- configurationmanagement at scale
+- simple proxy implementation (web proxy with https)
+- environment specific configuration
+- domain independent configuration
+- runs in kernel mode
+- use it natively on every Windows system with WMF 5.1
+- dependency awareness between nodes and conditions
+- extensibility because it is based on PowerShell
+- Get rid of GPOs
+- configuration sets
+- no hierarchy or inheritance
+- state is defined
+
+> GPOs are so 90ies
 
 ## Infrastructure as Code
 
@@ -81,9 +81,9 @@
 
 - Azure DevOps Pipelines
 
-## automatic testing 
+## automatic testing
 
-- [NUnit](https://nunit.org/) 
+- [NUnit](https://nunit.org/)
 - [Pester](https://pester.dev/)
 
 ## Terminology

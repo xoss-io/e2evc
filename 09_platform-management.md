@@ -1,4 +1,4 @@
-# Platform Managemnt
+# Platform Management
 
 The tool you choose to deploy your infrastructure is dependend on what your requirements are. 
 If you are running on one infrastructure it is perfectly fine to use Cloudformation an AWS, Azure ARM on Azure or SCCM on your on-premises infrastructure.
@@ -83,6 +83,21 @@ aws dynamodb create-table --table-name xoss-infraxo-prd-terraform-state-lock --a
 ```
 terraform import aws_s3_bucket.xoss-infraxo-prd-terraform-state-ACCOUNTID id=xoss-infraxo-prd-terraform-state-ACCOUNTID
 terraform import aws_dynamodb_table.xoss_root_terraform_lock id=xoss-root-terraform-lock
+```
+
+```
+# XOSS Terraform Version Requirements and Backend Configuration
+# ----------------------------------------------------------------------------------------------------------------------
+
+terraform {
+  required_version = ">= 0.12"
+  backend "s3" {
+    bucket = "xoss-infraxo-prd-terraform-state-ACCOUNTID"
+    key    = "terraform-state.tf"
+    region = "eu-central-1"
+
+  }
+}
 ```
 
 ## NUKE

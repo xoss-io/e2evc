@@ -161,3 +161,26 @@ We cannot make a suggestion here because the level of stages depends highly on y
 ### Even automation must be tested regularly
 
 As described in the chapter before. Test and run your automated infrastructure deployment periodically. If you run it on a daily basis with your CI/CD pipeline or monthly depends on your own expectation and needs.
+
+
+### NEVER EVER PUSH ACCESS CREDENTIALS TO GIT
+
+> Just don´t do it!
+
+```
+Dear AWS customer,
+
+Your AWS Account is compromised! Please review the following notice and take immediate action to secure your account. We have also opened an outbound Support Case if you have any additional questions or concerns regarding this notice.
+
+Your security is important to us. We have become aware that the AWS Access Key AKIAYM2REJZHQPGUXGPT (belonging to IAM user "ctx_poc") along with the corresponding Secret Key is publicly available online at https://github.com/xoss-io/e2evc/blob/695d35b08b33039c28f1ce01f695ef3245b5a1c6/platform/ctx_poc/main.tf.
+
+This poses a security risk to your account and other users, could lead to excessive charges from unauthorized activity or abuse, and violates the AWS Customer Agreement.
+
+Please delete the exposed credentials from your AWS account by using the instructions below and take steps to prevent any new credentials from being published in this manner again. Unfortunately, deleting the keys from the public website and/or disabling them is NOT sufficient to secure your account.
+
+Failure to perform the below security steps within 24 hours may result in the termination of all EC2 Spot instances in addition to any other suspected unauthorized usage on your account. If you believe you've received this note in error, please contact us immediately via the support case.
+
+To additionally protect your account from excessive charges, we have temporarily limited your ability to create some AWS resources.
+
+Detailed instructions are included below for your convenience.
+```
