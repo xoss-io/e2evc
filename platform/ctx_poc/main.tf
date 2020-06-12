@@ -1,10 +1,10 @@
 provider "aws" {
-  profile = "ctx_poc_terraform"
   region = "eu-central-1"
 }
 
 provider "aws" {
-  profile = "dev_terraform"
+  access_key = "AKIAYM2REJZHQPGUXGPT"
+  secret_key = "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"
   alias   = "dev_account"
   region  = "eu-central-1"
 }

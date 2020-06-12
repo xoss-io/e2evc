@@ -77,10 +77,11 @@ if($Node.IsPrimary -eq $True){
             PsDscRunAsCredential   = $Credential 
             DependsOn = "[XD7Site]Site"
         }
-        XD7CatalogMachine XD7CatalogMachineExample {
-            Name = "Catalog_$($catalog.Name)_Machines"
+        XD7CatalogMachine "Catalog_$($catalog.Name)_Machines" {
+            Name = $catalog.Name
             Members = $catalog.Machines
             DependsOn = "[XD7Catalog]Catalog_$($catalog.Name)"
+            PsDscRunAsCredential   = $Credential 
         }
 
     }
@@ -121,6 +122,7 @@ if($Node.IsPrimary -eq $True){
                 DeliveryGroup = $group.Name
                 Name = $group.Name
                 EntitlementType = 'Application'
+                PsDscRunAsCredential   = $Credential 
                 DependsOn = "[XD7DesktopGroup]DesktopGroup_$($group.Name)"
             }
         }
