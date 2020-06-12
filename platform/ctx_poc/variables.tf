@@ -2,7 +2,7 @@
 
 
 locals {
-  management_ips = ["24.134.128.209/32"]
+  management_ips = ["0.0.0.0/0"]
   dns_suffix     = "infraxo-dev.com"
   subdomain      = "demo"
   subdomain_fqdn = "${local.subdomain}.${local.dns_suffix}"

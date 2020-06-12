@@ -1,10 +1,14 @@
 provider "aws" {
-  profile = "ctx_poc_terraform"
   region = "eu-central-1"
 }
 
+terraform {
+  backend "s3" {
+    bucket = "ctx-poc-terraform"
+    key = "ctx_poc.tfstate"
+  }
+}
 provider "aws" {
-  profile = "dev_terraform"
   alias   = "dev_account"
   region  = "eu-central-1"
 }

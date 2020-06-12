@@ -64,12 +64,12 @@
                     Provisioning = "Manual"
                     Persistence = "Local"
                     IsMultiSession = $true
-                    MinimumFunctionalLevel = "7_20"
+                    MinimumFunctionalLevel = "LMAX"
                     Machines = @(
-                        "VDA-01.demo.infraxo-dev.com", 
-                        "VDA-02.demo.infraxo-dev.com", 
-                        "VDA-03.demo.infraxo-dev.com", 
-                        "VDA-04.demo.infraxo-dev.com")
+                        "DEMO\VDA-01", 
+                        "DEMO\VDA-02", 
+                        "DEMO\VDA-03", 
+                        "DEMO\VDA-04")
                 }
             )
             DeliveryGroups = @(

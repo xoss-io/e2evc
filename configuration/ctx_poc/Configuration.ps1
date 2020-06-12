@@ -8,7 +8,7 @@ Configuration "CTX_POC"{
     Import-DscResource -ModuleName xDSCDomainjoin
 
     $Administrator = $ConfigurationData.Domain.Administrator
-    $Credential =  Get-Credential -Username $Administrator
+    $Credential =  Get-Credential -Username $Administrator -Message "Please type the password for the administrative user"
 
 
     Node $AllNodes.NodeName {
