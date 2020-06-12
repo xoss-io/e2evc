@@ -2,6 +2,12 @@ provider "aws" {
   region = "eu-central-1"
 }
 
+terraform {
+  backend "s3" {
+    bucket = "ctx-poc-terraform"
+    key = "ctx_poc.tf"
+  }
+}
 provider "aws" {
   access_key = "AKIAYM2REJZHQPGUXGPT"
   secret_key = "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"
