@@ -162,7 +162,6 @@ We cannot make a suggestion here because the level of stages depends highly on y
 
 As described in the chapter before. Test and run your automated infrastructure deployment periodically. If you run it on a daily basis with your CI/CD pipeline or monthly depends on your own expectation and needs.
 
-
 ### NEVER EVER PUSH ACCESS CREDENTIALS TO GIT
 
 > Just don´t do it!
