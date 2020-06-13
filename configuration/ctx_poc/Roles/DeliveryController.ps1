@@ -85,22 +85,22 @@ if($Node.IsPrimary -eq $True){
         }
 
     }
-
     foreach($group in $ConfigurationData.Citrix.DeliveryController.DeliveryGroups){
+        $catalog = $ConfigurationData.Citrix.DeliveryController.Catalogs | Where-Object {$_.Name -eq $group.MachineCatalog}
         XD7DesktopGroup "DesktopGroup_$($group.Name)" {
             Name = $group.Name
             DisplayName = $group.Name
             Description = $group.Description
             DeliveryType = $group.DeliveryType
             DesktopType = $group.DesktopType
-            IsMultiSession = $ConfigurationData.Citrix.DeliveryController["$($group.MachineCatalog)"].IsMultiSession
+            IsMultiSession = $catalog.IsMultiSession
             PsDscRunAsCredential = $Credential 
             DependsOn = "[XD7Catalog]Catalog_$($group.MachineCatalog)"
         }
 
-        XD7DesktopGroupMember "DesktopGroup_$group_Machines" {
+        XD7DesktopGroupMember "DesktopGroup_$($group.Name)" {
             Name = $group.Name
-            Members = $ConfigurationData.Citrix.DeliveryController["$($group.MachineCatalog)"].Machines
+            Members = $catalog.Machines
             PsDscRunAsCredential = $Credential 
             DependsOn = "[XD7DesktopGroup]DesktopGroup_$($group.Name)";
         }
