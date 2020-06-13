@@ -1,5 +1,6 @@
 resource "aws_route53_zone" "demo_e2evc" {
   name = local.subdomain_fqdn
+
 }
 
 resource "aws_route53_record" "delegation" {

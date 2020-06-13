@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "ctx-poc-terraform"
-    key = "ctx_poc.tfstate"
+    key = "ctx_poc.tf"
     region = "eu-central-1"
   }
 }
@@ -13,6 +13,13 @@ provider "aws" {
   alias   = "dev_account"
   assume_role {
     role_arn = "arn:aws:iam::577306381903:role/allow_route_53_update"
+  }
+  region  = "eu-central-1"
+}
+provider "aws" {
+  alias   = "shared_account"
+  assume_role {
+    role_arn = "arn:aws:iam::136691220971:role/acm_remote"
   }
   region  = "eu-central-1"
 }
@@ -91,4 +98,9 @@ data template_file "vda_dsc_configuration" {
   vars = {
     configuration = local.vdas.configuration
   }
+}
+
+data aws_acm_certificate "wildcard" {
+  domain = local.certificate
+  provider = aws.shared_account
 }
