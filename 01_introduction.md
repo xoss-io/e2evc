@@ -21,6 +21,8 @@ __________                         .___.__ __      __    __________             
 ```
 Full Stack Developer at XOSS.io
 
+ > DevOps Engineer (needed to add that quick because of the previous session :-))
+
 ![Benedikt](img/benedikt.jpg)
 
 ```
