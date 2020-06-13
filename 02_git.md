@@ -25,7 +25,7 @@ Then run the second:
 choco install git
 ```
 
-####  With brew an a Mac
+####  With brew an a MAC
 
 [Install Homebrew](https://brew.sh/)
 
