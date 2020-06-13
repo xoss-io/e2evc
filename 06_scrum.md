@@ -56,7 +56,7 @@ We use the same Roles that are described in SCRUM.
 - Product Owner
 - Development Team
 - Scrum Master
-- 
+
 In a SCRUM setup, a development Team is at least 3, but should not be bigger than 9 people - according to a global research, the team size in which a Team will work most efficiently is 5 people.
 
 #### Events 
