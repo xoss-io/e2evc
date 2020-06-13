@@ -42,7 +42,7 @@ locals {
     }
   ]
   vdas = {
-    count = 1
+    count = 10
     prefix = "VDA"
     configuration = "GRP#08d80c93-ab3d-c2ba-d6c6-921408b0ae95"
     size          = "t3a.medium"
