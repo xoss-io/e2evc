@@ -6,10 +6,14 @@ terraform {
   backend "s3" {
     bucket = "ctx-poc-terraform"
     key = "ctx_poc.tfstate"
+    region = "eu-central-1"
   }
 }
 provider "aws" {
   alias   = "dev_account"
+  assume_role {
+    role_arn = "arn:aws:iam::577306381903:role/allow_route_53_update"
+  }
   region  = "eu-central-1"
 }
 
