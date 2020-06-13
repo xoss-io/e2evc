@@ -88,7 +88,7 @@
             AutoJoin = $true
             ControllerForJoin = "ctx-stf-01"
             SiteId = 1
-            BaseUrl = "https://storefront.demo.infraxo-dev.com"
+            BaseUrl = "http://storefront.demo.infraxo-dev.com"
             AuthenticationMethods = @("ExplicitForms","IntegratedWindows")
             Stores = @(
                 @{
